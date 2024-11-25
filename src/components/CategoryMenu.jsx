@@ -22,7 +22,7 @@ const CategoryMenu = () => {
   const selectedCategory = useSelector((state) => state.category.category);
 
   return (
-    <div className="ml-6">
+    <div className="ml-6  top-5">
       <h3 className="text-xl font-semibold">Find the best food</h3>
       <div className="my-5  gap-3 overflow-x-scroll scroll-smooth lg:overflow-x-hidden flex justify-end mr-9">
         <button

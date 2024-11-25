@@ -67,7 +67,7 @@ const Cart = () => {
       </div>
       <FaShoppingCart
         onClick={() => setActiveCart(!activeCart)}
-        className={`rounded-full bg-white shadow-md text-5xl p-3 fixed bottom-4 right-4 ${
+        className={`rounded-full bg-white shadow-md text-5xl z-56 p-3 fixed top-[30px] bg-transparent right-[4px] ${
           totalQty > 0 && "animate-bounce delay-500 transition-all"
         } `}
       />

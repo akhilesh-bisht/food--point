@@ -1,9 +1,10 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home"; // Import Home if not already
 import Success from "./pages/Success";
 import Error from "./pages/Error";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Detail from "./pages/Detail";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
           element={<ProtectedRoute element={<Success />} />}
         />
         <Route path="/*" element={<Error />} />
+        {/* Corrected path for the Detail route */}
+        <Route path="/details/:id" element={<Detail />} />
       </Routes>
     </BrowserRouter>
   );
