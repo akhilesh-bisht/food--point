@@ -15,7 +15,7 @@ const Detail = () => {
             src={detail.img}
             alt={detail.name}
             className="detail-image"
-            style={{ width: "300px", height: "200px", objectFit: "cover" }}
+            style={{ width: "320px", height: "200px", objectFit: "cover" }}
           />
           <p>Price: ₹{detail.price}</p>
           <p>Rating: {detail.rating}</p>
