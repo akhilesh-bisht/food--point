@@ -57,7 +57,7 @@ const Detail = () => {
         </div>
       ) : (
         <div className="flex items-center justify-center h-screen">
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-500 text-lg">
             No details available. Please select a product.
           </p>
         </div>
