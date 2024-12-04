@@ -22,7 +22,7 @@ const Detail = () => {
       {detail ? (
         <div className="detail-container flex flex-col md:flex-row justify-evenly items-center p-5 rounded-lg gap-5">
           {/* Image Section */}
-          <div className="w-full md:w-1/2 max-h-[400px]">
+          <div className="w-full md:w-1/2 max-h-[380px]">
             <img
               src={detail.img || "https://via.placeholder.com/400"}
               alt={detail.name || "Product"}
